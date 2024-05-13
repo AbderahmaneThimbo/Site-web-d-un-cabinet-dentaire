@@ -1,0 +1,743 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.logo{
+    display: flex;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu li{
+    margin: 0 15px;
+    list-style: none;
+}
+.menu li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #777777;
+    position: relative;
+    transition: color 0.3s;
+}
+
+
+button{
+    background-color:#0056b3;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    color:#f8fafc ;
+}
+.separator{
+    width: 85%;
+    height: 1px;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 85px;
+}
+
+
+/* acceuil home CSS */
+#home {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: calc(100vh - 50px);
+    justify-content: space-between;
+}
+#home .left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#home .left h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+#home .left h1 span{
+    color: #ffd700;
+}
+#home .left p{
+    margin-bottom: 5px;
+    margin-top: 2px;
+    color: #777777 ;
+}
+#home .left .btn {
+    display: flex;
+    margin-top: 70px;
+    gap: 90px;
+}
+.btn button {
+    width: 25%;
+    height: 15%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn button:first-child {
+    background-color: #007bff; 
+    color: white; 
+}
+.btn button:last-child {
+    background-color:transparent;
+    color: black; 
+    border: 1px solid #007bff; 
+}
+.btn button:hover {
+    opacity: 0.8; 
+}
+
+#home .right {
+    width: 45%;
+}
+
+/*  services CSS */
+
+#services {
+    display: flex;
+    background-color: #007bff;
+    justify-content: center;  
+    /* width: 100%; */
+    height: 30vh;
+    /* margin-left: 85px; */
+    
+}
+
+.ourservice {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+}
+.titel{
+    margin-right: 110px;
+    margin-top: 50px;
+    color: #ffffff;
+    padding-top:15px;
+    font-size: 25px;
+}
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 15px;
+    padding: 40px;
+}
+
+.step {
+    background-color: #fff; 
+    border-radius: 15px; 
+    margin-right: 30px;  
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.step:last-child {
+    margin-right: 0;
+}
+
+.step-content {
+    padding: 25px;
+}
+
+.step img {
+    display: flex;
+    margin-right: 10px; 
+    padding: 10px;
+    margin: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#serviceprovide {
+    display: flex; 
+}
+
+.provide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.provideimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; 
+    /* width: 100%; */
+    padding-left: 250px; 
+    padding-bottom: 50px;
+    /* margin-left: 90px; */
+    border-right: 1px solid #ccc; 
+    border-radius: 55px 0px;
+}
+
+.provideimg img {
+    max-width: 100%; 
+    display: flex; 
+    position: relative;
+    padding-left: 90px;
+    padding-top: 70px;
+    margin-left: 90%;
+    margin: 0 auto; 
+}
+
+
+.providecheck {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.providecheck h3{
+    position: relative;
+    bottom: 90px;
+    left: 250px;
+    white-space: nowrap;
+    
+}
+
+
+.providecheckleft {
+    padding-right: 10%;
+}
+
+.providecheckright {
+    padding-right: 10px; 
+}
+
+.providecheck p {
+    display: flex; 
+    align-items: center;
+    white-space: nowrap;
+    padding: 10px 10px;
+    font-size: 20px; 
+}
+
+.providecheck img {
+    margin-right: 10px; 
+}
+
+
+ /* we are special Css  */
+
+ #special {
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#special {
+    text-align: center;
+}
+#special h3{
+    position: relative;
+    left: 50px;
+    bottom: 10px;
+    font-size: 35px;
+}
+
+#special h2 {
+    position: relative;
+    right: 800px;
+    top: 20px;
+    font-size: 35px;
+}
+
+#special h1 {
+    position: relative; 
+    right: 230px;
+    font-size: 40px;
+    margin: 0; 
+}
+#special h1 span{
+     color: #ffd700;
+}
+
+#special h1::after {
+    content: ''; 
+    position: absolute; 
+    bottom: -5px; 
+    right: 50px;
+    width: 1200px; 
+    height: 1px; 
+    background-color:#777777; 
+}
+
+
+#sectionus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    position: relative;
+    width: 70%;
+    left: 200px;
+}
+
+.us {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+}
+
+.usmorespecial {
+    text-align: center;
+    background: #f8fafc;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 30px;
+}
+.usmorespecial h4{
+    font-size: 18px;
+    margin: 15px;
+}
+
+.smile {
+    height: 300px;
+    margin-top: 90px;
+    /* width: 104%; */
+    background-color:#0056b3; 
+    color:#ffffff; 
+    padding: 20px; 
+    text-align: center; 
+}
+.smile h2{
+    color: #f8fafc;
+    margin-top: 50px;
+}
+.smile p{
+    margin-top: 10px;
+    color: #f8fafc;
+}
+
+.smile button {
+    margin-top: 35px;
+    background-color:#0056b3; 
+    color:#ffffff; 
+    border: 1px solid #f8fafc; 
+    padding: 18px 39px ; 
+    border-radius: 12px;
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.smile button:hover {
+    background-color: white; 
+    color: #0056b3;
+}
+
+
+/* about us CSS */
+
+#aboutus{
+   
+}
+#aboutus .title{
+    margin: 60px 60px;
+    max-width: 100%;
+}
+#aboutus .title h2 {
+    position: relative; 
+    left: 180px;
+    top: 110px;
+    font-size: 50px;
+    margin: 0; 
+}
+#aboutus .title h2 span{
+     color: #ffd700;
+}
+
+#aboutus .title h2::after {
+    content: ''; 
+    position: absolute; 
+    bottom: -5px; 
+    right: 690px;
+    width: 1100px; 
+    height: 1px; 
+    background-color:#777777; 
+}
+#aboutus .title h4{
+    position: relative;
+    float: right;
+    right:385px;
+    top: 25px;
+    font-size: 35px;
+}
+#aboutus .title h3{
+    position: relative;
+    float: right;
+    top: 60px;
+    right:190px;
+    font-size: 45px;
+}
+
+#aboutus .ourhistory{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    margin-top: 200px;
+}
+#aboutus .ourhistory .left{
+    max-width: 30%;
+    max-height: 10%;
+}
+#aboutus .ourhistory .right{
+    position: relative;
+    right: 250px;
+    width: 35%; 
+    background: #f8fafc;
+    border-radius: 20px;
+    border: 1px solid #f8fafc;
+}
+#aboutus .ourhistory .right h5{
+    margin-top: 55px;
+    margin-bottom: 50px;
+    margin-left: 45px;
+    font-size: 30px;
+}
+#aboutus .ourhistory .right p{
+    margin-top: 20px;
+    margin-left: 45px;
+    font-size: 18px;
+    color: #777777;
+}
+
+
+/* our doctors section CSS */
+
+#ourdoc{
+    background-color: #f8fafc;
+    width: 100%;
+    height: 100%; 
+}
+#ourdoc .ourdoctors{
+    
+}
+#ourdoc .ourdoctors .titel{
+    margin-left: 190px;
+    color: black;
+}
+#ourdoc .ourdoctors .titel h1{
+    position: relative;
+    float: inline-end;
+    font-size: 50px;
+    max-width: 100%;
+}
+#ourdoc .ourdoctors .titel h1::after{
+    content: ''; 
+    position: absolute; 
+    bottom: -5px; 
+    right: 50px;
+    width: 1200px; 
+    height: 1px; 
+    background-color:#777777; 
+}
+#ourdoc .ourdoctors .titel h1 span{
+    color: #ffd700;
+}
+#ourdoc .ourdoctors .titel h2 {
+    position: relative;
+    font-size: 60px;
+    top: 65px;
+    left: 50px;
+}
+#ourdoc .ourdoctors .titel h3 {
+    position: relative;
+    font-size: 40px;
+    top: 65px;
+    left: 50px;
+}
+#ourdoc .ourdoctors .doc{
+    display: flex;
+    justify-content: space-around;
+    padding: 150px 50px;
+    margin-left: 350px;
+}
+
+#ourdoc .ourdoctors .doc .dr img {
+    padding: 15px;
+    margin: 15px;
+}
+#ourdoc .ourdoctors .doc .dr h3{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#ourdoc .ourdoctors .doc .dr p{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: #777777;
+}
+#ourdoc .ourdoctors .doc .dr button{
+    margin-top: 35px;
+    background-color:transparent; 
+    color:#007bff; 
+    border: 1px solid #007bff; 
+    padding: 18px 39px ; 
+    margin-left: 55px;
+    border-radius: 12px;
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+
+/* client section */
+
+.client{
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+    background-color: #0056b3;
+}
+.client .imgclient{
+    width: 18%;
+    height: 70%;
+    margin-top: 59px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+}
+.client .imgclient img{
+    position: relative;
+    top: 30px;
+}
+.client .imgclient h3{
+    position: relative;
+    top: 39px;
+}
+.client .clientsays{
+   position: relative;
+   right: 200px;
+   font-size: 20px;
+   color: #ffffff;
+}
+.client .clientsays h4{
+    position: relative;
+    top: 125px;
+    font-size: 35px;
+}
+.client .clientsays p{
+    position: relative;
+    top: 165px;
+    margin-top: 10px;
+    color: #f8fafc;
+}
+
+
+/* appointment section */
+
+#appoinment {
+
+}
+#appoinment .titel{
+    color: black;
+}
+#appoinment .titel  h1{
+    position: relative;
+    margin: 25px;
+    left: 190px;
+}
+#appoinment .titel  h1 span{
+    color: #ffd700;
+}
+#appoinment .titel  h1::after{
+    content: ''; 
+    position: absolute; 
+    bottom: -5px; 
+    right: 550px;
+    width: 1200px; 
+    height: 1px; 
+    background-color:#777777; 
+}
+#appoinment .titel h2 {
+    position: relative;
+    text-align: end;
+    bottom: 90px;
+    right: 250px;
+}
+#appoinment .titel h3{
+    position: relative;
+    text-align: end;
+    bottom: 100px;
+    right: 250px;
+    font-size: 32px;
+}
+
+#appoinment .appoinment{
+    display: flex;
+}
+#appoinment .appoinment .right{
+    margin-left: 150px;
+}
+#appoinment .appoinment .left form{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.form-group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.left label {
+    font-weight: bold;
+}
+.left input[type="text"],
+.left select,
+.left input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+/* Subscrib section */
+
+#subscrib{
+    display: flex;
+    background-color: #f8fafc;
+    height: 35vh;
+}
+#subscrib .subscribe{
+    background-color: #216583;
+    flex-direction: column;
+    max-height: 60%;
+    margin-top: 10vh;
+    margin-left: 550px;
+    width: 100vh;
+    border-radius: 25px;
+}
+#subscrib .subscribe .tittel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: #f8fafc;
+    font-size: 25px;
+}
+#subscrib .subscribe .btnn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 28px;
+}
+#subscrib .subscribe .btnn button{
+    border-radius: 8px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+#subscrib .subscribe .btnn button:last-child {
+    background-color:#f0f0f0;
+    color: black; 
+}
+
+/* How to find us */
+
+#dentics{
+    background-color: #007bff;
+}
+#dentics .container {
+    display: flex;
+    justify-content: space-around;
+     height: 45vh; 
+    color: #f0f0f0;
+}
+#dentics .container .logo2 {
+    margin-top: 100px;
+    
+}
+#dentics .container .logo2 img{
+    margin-bottom: 50px;
+    filter: brightness(0) invert(1);
+}
+#dentics .container .logo2 p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:15px ;
+}
+#dentics .container .tovisit {
+    margin-top: 100px;
+}
+#dentics .container .tovisit p{
+    margin-bottom:28px ;
+    margin-top: 20px;
+}
+#dentics .container .tovisit h3 {
+    margin-bottom:8px ;
+    font-size: 25px;
+}
+#dentics .container .social{
+    margin-top: 100px;
+}
+
+#dentics .container .social p{
+    margin-top: 20px;
+}
+.support{
+    display: grid;
+    gap: 0px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 35px;
+}
+.support p{
+
+}
+
+#dentics .container .hello{
+    margin-top: 110px;
+}
+#dentics .container .hello p:first-child {
+   margin-bottom: 45px;
+}
+#dentics .container .hello .hel{
+    margin-bottom: 35px;
+}
+hr{
+    height: 100px;
+    padding-top: 500;
+}
+
+
+footer{
+    background-color: #0056b3;
+    color: #f0f0f0;
+    height: 8vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
