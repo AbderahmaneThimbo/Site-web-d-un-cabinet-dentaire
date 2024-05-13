@@ -602,23 +602,35 @@ button{
 #appoinment .appoinment .left form{
     display: flex;
     flex-direction: column;
-   
+    margin-left: 55px;
 }
 
 .form-group{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     
 }
 .left label {
-    font-weight: bold;
+     margin-bottom: 10px;
+     padding-top: 10px;
 }
 .left input[type="text"],
 .left select,
 .left input[type="date"] {
     width: 100%;
-    padding: 5px;
-    box-sizing: border-box;
+    padding: 20px;
+    padding-left: 50px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+#appoinment .appoinment .left form textarea{
+    margin-top: 15px;
+    border-radius: 9px;
+}
+#appoinment .appoinment .left form button{
+    margin-top: 55px;
 }
 
 
