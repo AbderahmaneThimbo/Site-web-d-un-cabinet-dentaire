@@ -5,7 +5,7 @@
     font-family: "Poppins", sans-serif;
 }
 body{
-
+   overflow-x: hidden;
 }
 header{
     display: flex;
@@ -30,20 +30,29 @@ header{
     list-style: none;
 }
 .menu li a {
-    font-size: 14px;
+    font-size: 18px;
     text-decoration: none;
     color: #777777;
     position: relative;
     transition: color 0.3s;
 }
-
+.menu li a:hover{
+    color: #007bff;
+}
 
 button{
     background-color:#0056b3;
     padding: 10px;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
     border: 0;
     border-radius: 5px;
     color:#f8fafc ;
+}
+button a{
+    color: #f0f0f0;
+    text-decoration: 0;
 }
 .separator{
     width: 85%;
@@ -55,6 +64,8 @@ button{
 
 
 /* acceuil home CSS */
+
+
 #home {
     margin-top: 0;
     display: flex;
@@ -120,10 +131,7 @@ button{
     display: flex;
     background-color: #007bff;
     justify-content: center;  
-    /* width: 100%; */
     height: 30vh;
-    /* margin-left: 85px; */
-    
 }
 
 .ourservice {
@@ -190,10 +198,8 @@ button{
     align-items: center;
     justify-content: center;
     background-color: #f0f0f0; 
-    /* width: 100%; */
     padding-left: 250px; 
     padding-bottom: 50px;
-    /* margin-left: 90px; */
     border-right: 1px solid #ccc; 
     border-radius: 55px 0px;
 }
@@ -319,12 +325,15 @@ button{
     font-size: 18px;
     margin: 15px;
 }
+.usmorespecial p{
+    color: #777777;
+    margin-top: 5px;
+}
 
 .smile {
     height: 300px;
     margin-top: 90px;
-    /* width: 104%; */
-    background-color:#0056b3; 
+    background-color:#516eff; 
     color:#ffffff; 
     padding: 20px; 
     text-align: center; 
@@ -340,7 +349,7 @@ button{
 
 .smile button {
     margin-top: 35px;
-    background-color:#0056b3; 
+    background-color:transparent; 
     color:#ffffff; 
     border: 1px solid #f8fafc; 
     padding: 18px 39px ; 
@@ -438,9 +447,7 @@ button{
     width: 100%;
     height: 100%; 
 }
-#ourdoc .ourdoctors{
-    
-}
+
 #ourdoc .ourdoctors .titel{
     margin-left: 190px;
     color: black;
@@ -509,6 +516,9 @@ button{
     cursor: pointer; 
     transition: background-color 0.3s, color 0.3s; 
 }
+#ourdoc .ourdoctors .doc .dr button a{
+    color: #007bff;
+}
 
 
 /* client section */
@@ -517,7 +527,7 @@ button{
     display: flex;
     justify-content: space-evenly;
     height: 500px;
-    background-color: #0056b3;
+    background-color: #516eff;
 }
 .client .imgclient{
     width: 18%;
@@ -539,7 +549,7 @@ button{
    position: relative;
    right: 200px;
    font-size: 20px;
-   color: #ffffff;
+   color: #f0f0f0;
 }
 .client .clientsays h4{
     position: relative;
@@ -550,15 +560,21 @@ button{
     position: relative;
     top: 165px;
     margin-top: 10px;
-    color: #f8fafc;
+    color: #ccc;
+}
+.client .clientsays .point{
+    position: relative;
+    font-size: 70px;
+    color: #ccc;
+    border-radius: 500px;
+    top: 200px;
+    left: 250px;
 }
 
 
 /* appointment section */
 
-#appoinment {
 
-}
 #appoinment .titel{
     color: black;
 }
@@ -619,10 +635,11 @@ button{
 .left select,
 .left input[type="date"] {
     width: 100%;
-    padding: 20px;
+    background: transparent;
+    padding: 14px;
     padding-left: 50px;
     margin-left: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #appoinment .appoinment .left form textarea{
@@ -631,6 +648,7 @@ button{
 }
 #appoinment .appoinment .left form button{
     margin-top: 55px;
+    padding: 10px;
 }
 
 
@@ -665,20 +683,24 @@ button{
     gap: 25px;
     margin-top: 28px;
 }
-#subscrib .subscribe .btnn button{
+#subscrib .subscribe .btnn input{
+    background-color: #6393a8;
+    color:#f8fafc ;
+    padding: 10px;
+    border-radius: 8px;
+}
+#subscrib .subscribe .btnn button {
+    background-color:white;
     border-radius: 8px;
     padding-left: 60px;
     padding-right: 60px;
-}
-#subscrib .subscribe .btnn button:last-child {
-    background-color:#f0f0f0;
     color: black; 
 }
 
 /* How to find us */
 
 #dentics{
-    background-color: #007bff;
+    background-color: #516eff;
 }
 #dentics .container {
     display: flex;
@@ -724,11 +746,13 @@ button{
     grid-template-columns: repeat(2, 1fr);
     margin-top: 35px;
 }
-.support p{
-
+.support p a{
+   text-decoration: 0;
+   color: #f0f0f0;
 }
 
 #dentics .container .hello{
+
     margin-top: 110px;
 }
 #dentics .container .hello p:first-child {
@@ -737,14 +761,15 @@ button{
 #dentics .container .hello .hel{
     margin-bottom: 35px;
 }
-hr{
-    height: 100px;
-    padding-top: 500;
+
+#dentics .container hr{
+    height: 300px;
+    margin-top: 60px;
+  color: silver;
 }
 
-
 footer{
-    background-color: #0056b3;
+    background-color: #216583;
     color: #f0f0f0;
     height: 8vh;
     align-items: center;
