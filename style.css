@@ -5,7 +5,12 @@
     font-family: "Poppins", sans-serif;
 }
 body{
-   overflow-x: hidden;
+    width: 100%;
+  
+}
+.contenair{
+    display: flex;
+    flex-direction: column;
 }
 header{
     display: flex;
@@ -173,12 +178,12 @@ button a{
 }
 
 .step img {
-    display: flex;
+    /* display: flex; */
     margin-right: 10px; 
     padding: 10px;
     margin: 3px;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
 }
 
 
@@ -299,39 +304,32 @@ button a{
 
 
 #sectionus {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-    position: relative;
-    width: 70%;
-    left: 200px;
-}
-
-.us {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 30px; 
+    /* grid-template-rows: repeat(2, 1fr); */
+    gap: 50px; 
+    /* height: 100vh; */
+    width: 80%;
+    margin: 20px 90px;
 }
 
 .usmorespecial {
     text-align: center;
     background: #f8fafc;
     border-radius: 15px;
-    margin: 10px;
-    padding: 30px;
+    padding: 10px;
 }
 .usmorespecial h4{
     font-size: 18px;
-    margin: 15px;
+    margin-top: 5px;
 }
 .usmorespecial p{
     color: #777777;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .smile {
-    height: 300px;
+    height: 330px;
     margin-top: 90px;
     background-color:#516eff; 
     color:#ffffff; 
@@ -367,7 +365,9 @@ button a{
 /* about us CSS */
 
 #aboutus{
-   
+   height: 100vh; 
+   display: contents;
+
 }
 #aboutus .title{
     margin: 60px 60px;
@@ -412,7 +412,8 @@ button a{
     display: flex;
     justify-content: space-around;
     margin: 0;
-    margin-top: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 #aboutus .ourhistory .left{
     max-width: 30%;
@@ -420,7 +421,7 @@ button a{
 }
 #aboutus .ourhistory .right{
     position: relative;
-    right: 250px;
+    right: 80px;
     width: 35%; 
     background: #f8fafc;
     border-radius: 20px;
@@ -451,6 +452,7 @@ button a{
 #ourdoc .ourdoctors .titel{
     margin-left: 190px;
     color: black;
+    width: 80%;
 }
 #ourdoc .ourdoctors .titel h1{
     position: relative;
@@ -485,8 +487,10 @@ button a{
 #ourdoc .ourdoctors .doc{
     display: flex;
     justify-content: space-around;
-    padding: 150px 50px;
-    margin-left: 350px;
+    padding: 90px 50px;
+    width: 80%;
+    margin-left: 190px;
+    /* margin-left: 700px; */
 }
 
 #ourdoc .ourdoctors .doc .dr img {
@@ -611,14 +615,16 @@ button a{
 
 #appoinment .appoinment{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #appoinment .appoinment .right{
-    margin-left: 150px;
+    /* margin-left: 150px; */
 }
 #appoinment .appoinment .left form{
     display: flex;
     flex-direction: column;
-    margin-left: 55px;
+    margin-left: 95px;
 }
 
 .form-group{
@@ -648,6 +654,7 @@ button a{
 }
 #appoinment .appoinment .left form button{
     margin-top: 55px;
+    background-color: #516eff;
     padding: 10px;
 }
 
@@ -656,16 +663,16 @@ button a{
 
 #subscrib{
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #f8fafc;
-    height: 35vh;
+    height: 45vh;
 }
 #subscrib .subscribe{
     background-color: #216583;
     flex-direction: column;
-    max-height: 60%;
-    margin-top: 10vh;
-    margin-left: 550px;
-    width: 100vh;
+    height: 75%;
+    width: 150vh;
     border-radius: 25px;
 }
 #subscrib .subscribe .tittel{
@@ -673,6 +680,7 @@ button a{
     align-items: center;
     justify-content: center;
     margin-top: 30px;
+    margin-bottom: 60px;
     color: #f8fafc;
     font-size: 25px;
 }
@@ -680,12 +688,12 @@ button a{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 25px;
-    margin-top: 28px;
+    
 }
 #subscrib .subscribe .btnn input{
     background-color: #6393a8;
     color:#f8fafc ;
+    margin-right: 20px;
     padding: 10px;
     border-radius: 8px;
 }
@@ -700,6 +708,7 @@ button a{
 /* How to find us */
 
 #dentics{
+    height: 50vh;
     background-color: #516eff;
 }
 #dentics .container {
