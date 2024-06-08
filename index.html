@@ -14,14 +14,18 @@
         </div>
         <ul class="menu">
             <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#special">Services</a></li>
             <li><a href="#aboutus">About us</a></li>
-            <li><a href="#ourdoc">Register</a></li>
-            <button> <a href="#appoinment">Appoinment</a></button>
+            <li><a href="#appoinment">Appoinment</a></li>
+            <li><a href="signup.html">Sing Up</a></li>
+            <button><a href="join.html">Login</a></button>
         </ul>
         
+        <!-- menu responsive -->
+        <div class="toggle_menu"></div>
+       
     </header>
-        <div class="separator"></div>
+    <hr>
 
          <!-- section acceuil home -->
 
@@ -32,12 +36,12 @@
             <p>Appropriatrly embrace transparent materials via</p>
             <p>turnkey nich markets.</p>
             <div class="btn">
-                <button>Get Started</button> <button>Lear More</button>
+                <button>Make An Appoinment</button>
             </div>
             
         </div>
         <div class="right">
-            <img src="images/illustrationss.png" alt="home image">
+            <img src="images/dental-pexels-photo-6627462.jpeg" alt="home image">
         </div>
     </section>  
 
@@ -104,10 +108,9 @@
     
     <!-- section we are special -->
      <div id="special">
-        <h3>What Makes Us Mor</h3>
-       <h2>Special</h2>
-       <h1>KEY<span>FEATURE</span></h1>
+       <h1>OUR<span>SERVICES</span></h1>
      </div>
+     <hr>
     <section id="sectionus">
            <div class="usmorespecial">
                <img src="images/feat1.png"alt="image of doctor"> 
@@ -154,36 +157,27 @@
          </div>
       
     </section>
-        <div class="smile">
-             <h2>Let Us brighten <strong>Your Smile! </strong></h2>
-             <p>Helping patiens achieve good dental health & beautiful smile is a privliege & responsibility. For over 30</p>
-            <p>years, we ptoudly provided the best dental experience in New Yourk. Our confort-frist approach is</p>
-           <p>designed to meet the needs of you & your entire family.</p>
-
-           <button>Make an Appinment</button>
-       </div>
 
    <!-- section about us -->
       
    <section id="aboutus">
          <div class="title">
-            <h2>WHO <span>WE ARE</span></h2>
-            <h4>Our Glorious</h4>
-            <h3>History</h3>
+            <h1>WHO <span>WE ARE</span></h1>
          </div>
+         <hr>
 
          <div class="ourhistory">
               <div class="left">
-                   <img src="images/Closeupsmileypatientatappointment.png" alt="client image">
+                   <img src="images/types-dentistry-specialties-feature.png" alt="client image">
               </div>
 
               <div class="right">
                   <h5>Our history</h5>
-                  <p>Dentics is a well-known name in dental and oral care in New Tork.</p>
-                  <p>The journey of this institution Started in 1990 under the hands of </p>
-                  <p>Dr.Jonathon Doe, Gold leading the way in dental treatment in </p>
-                  <p>USA for more than 30 years in keeping with the evolution of time</p>
-                 <p>and the modernization of the era.</p>
+                  <p>Dentics is a well-known name in dental and oral care in New Tork. <br>
+                  The journey of this institution Started in 1990 under the hands of <br>
+                  Dr.Jonathon Doe, Gold leading the way in dental treatment in <br>
+                  USA for more than 30 years in keeping with the evolution of time <br>
+                 and the modernization of the era.</p>
              </div>
          </div>
     
@@ -196,10 +190,9 @@
             <div class="ourdoctors">
 
                  <div class="titel">
-                    <h3>Meet some of Our</h3>
-                    <h2>Brains</h2>
                     <h1>MEET OUR <span>DOCTORS</span></h1>
                  </div>
+                 <hr>
 
                  <div class="doc">
                     <div class="dr">
@@ -238,41 +231,18 @@
             </div>
    </section>
 
-   <!-- client section  -->
-
-   <section>
-          <div class="client">
-                <div class="imgclient">
-                     <img src="images/customer.png" alt="client image">
-                     <h3>Samantha Payne</h3>
-                </div>
-
-                 <div class="clientsays">
-                    <h4>What our client says about us</h4>
-                    <p>I've seen a lot Dentists over my lifetime because l've had some seriouse dental</p>
-                    <p>issues. But my highest praise goes to Dr. Jonathon Doe and his staffs. I was always</p>
-                    <p>very anixious going to the dentist but this time at Digital implaant, my experiencewas</p>
-                    <p>so painless and relaxed their was no discomfort whatsoever</p>
-
-                    <div class="point">. . .</div>
-                 </div>
-          </div>
-   </section>
-
    <!-- appointment section -->
 
     <section id="appoinment">
 
         <div class="titel">
-            <h1>MAKE AN <span>APPOINMENT</span></h1>
-            <h3>Consult with our</h3>
-            <h2>Doctor</h2>
+            <h1>APPOINMENT</h1>
         </div>
-
+        <hr>
         <div class="appoinment">
 
             <div class="right">
-                <img src="images/contact.png" alt="client image">
+                <img src="images/doctor-with-tablet-computer.jpg" alt="doctor">
             </div>
             
             <div class="left">
@@ -395,5 +365,15 @@
         <p>&copy 2001-2022, All Rights Reserved</p>
     </footer>
 </section>
+
+
+<script>
+    var small_menu = document.querySelector('.toggle_menu')
+    var menu = document.querySelector('.menu')
+    small_menu.onclick = function(){
+        small_menu.classList.toggle('active')
+        menu.classList.toggle('responsive')
+    }
+ </script>
 </body>
 </html>

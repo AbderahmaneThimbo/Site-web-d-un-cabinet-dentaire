@@ -21,6 +21,8 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    margin-top: 20px;
+    
 }
 .logo{
     display: flex;
@@ -59,12 +61,10 @@ button a{
     color: #f0f0f0;
     text-decoration: 0;
 }
-.separator{
-    width: 85%;
-    height: 1px;
-    background-color: black;
+hr{
+    color: silver;
     margin-top: 10px;
-    margin-left: 85px;
+    border: 1px solid;
 }
 
 
@@ -81,7 +81,7 @@ button a{
     justify-content: space-between;
 }
 #home .left {
-    width: 70%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,31 +105,26 @@ button a{
     gap: 90px;
 }
 .btn button {
-    width: 25%;
-    height: 15%;
+    width: 35%;
+    height: 25%;
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
 }
-.btn button:first-child {
-    background-color: #007bff; 
-    color: white; 
-}
-.btn button:last-child {
-    background-color:transparent;
-    color: black; 
-    border: 1px solid #007bff; 
-}
-.btn button:hover {
-    opacity: 0.8; 
-}
+
 
 #home .right {
-    width: 45%;
+    width: 40%;
+    
 }
-
+#home .right img{
+    width: 100%;
+    border-radius: 50px;
+}
 /*  services CSS */
 
 #services {
@@ -178,12 +173,9 @@ button a{
 }
 
 .step img {
-    /* display: flex; */
     margin-right: 10px; 
     padding: 10px;
     margin: 3px;
-    /* align-items: center;
-    justify-content: center; */
 }
 
 
@@ -262,55 +254,20 @@ button a{
  #special {
     margin: 50px;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
 }
-#special {
-    text-align: center;
-}
-#special h3{
-    position: relative;
-    left: 50px;
-    bottom: 10px;
-    font-size: 35px;
-}
-
-#special h2 {
-    position: relative;
-    right: 800px;
-    top: 20px;
-    font-size: 35px;
-}
-
 #special h1 {
-    position: relative; 
-    right: 230px;
-    font-size: 40px;
-    margin: 0; 
+    text-align: center;
+    font-size: 45px;
 }
 #special h1 span{
-     color: #ffd700;
+    color: #ffd700;
 }
-
-#special h1::after {
-    content: ''; 
-    position: absolute; 
-    bottom: -5px; 
-    right: 50px;
-    width: 1200px; 
-    height: 1px; 
-    background-color:#777777; 
-}
-
 
 #sectionus {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    /* grid-template-rows: repeat(2, 1fr); */
-    gap: 50px; 
-    /* height: 100vh; */
-    width: 80%;
-    margin: 20px 90px;
+    gap: 35px; 
+    margin: 35px 100px;
 }
 
 .usmorespecial {
@@ -318,6 +275,7 @@ button a{
     background: #f8fafc;
     border-radius: 15px;
     padding: 10px;
+
 }
 .usmorespecial h4{
     font-size: 18px;
@@ -328,38 +286,6 @@ button a{
     margin-top: 15px;
 }
 
-.smile {
-    height: 330px;
-    margin-top: 90px;
-    background-color:#516eff; 
-    color:#ffffff; 
-    padding: 20px; 
-    text-align: center; 
-}
-.smile h2{
-    color: #f8fafc;
-    margin-top: 50px;
-}
-.smile p{
-    margin-top: 10px;
-    color: #f8fafc;
-}
-
-.smile button {
-    margin-top: 35px;
-    background-color:transparent; 
-    color:#ffffff; 
-    border: 1px solid #f8fafc; 
-    padding: 18px 39px ; 
-    border-radius: 12px;
-    cursor: pointer; 
-    transition: background-color 0.3s, color 0.3s; 
-}
-
-.smile button:hover {
-    background-color: white; 
-    color: #0056b3;
-}
 
 
 /* about us CSS */
@@ -370,59 +296,29 @@ button a{
 
 }
 #aboutus .title{
-    margin: 60px 60px;
-    max-width: 100%;
+    margin-top: 25px;
 }
-#aboutus .title h2 {
-    position: relative; 
-    left: 180px;
-    top: 110px;
-    font-size: 50px;
-    margin: 0; 
-}
-#aboutus .title h2 span{
-     color: #ffd700;
-}
-
-#aboutus .title h2::after {
-    content: ''; 
-    position: absolute; 
-    bottom: -5px; 
-    right: 690px;
-    width: 1100px; 
-    height: 1px; 
-    background-color:#777777; 
-}
-#aboutus .title h4{
-    position: relative;
-    float: right;
-    right:385px;
-    top: 25px;
-    font-size: 35px;
-}
-#aboutus .title h3{
-    position: relative;
-    float: right;
-    top: 60px;
-    right:190px;
+#aboutus .title h1 {
+    text-align: center;
     font-size: 45px;
+}
+#aboutus .title h1 span{
+     color: #ffd700;
 }
 
 #aboutus .ourhistory{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 0;
     margin-top: 100px;
     margin-bottom: 100px;
 }
-#aboutus .ourhistory .left{
-    max-width: 30%;
-    max-height: 10%;
+
+#aboutus .ourhistory .left img{
+    border-radius: 15px;
+    width: 80%;
 }
 #aboutus .ourhistory .right{
-    position: relative;
-    right: 80px;
-    width: 35%; 
     background: #f8fafc;
     border-radius: 20px;
     border: 1px solid #f8fafc;
@@ -434,63 +330,41 @@ button a{
     font-size: 30px;
 }
 #aboutus .ourhistory .right p{
-    margin-top: 20px;
-    margin-left: 45px;
+    margin: 20px 45px;
     font-size: 18px;
     color: #777777;
+    line-height: 2;
 }
 
 
 /* our doctors section CSS */
 
 #ourdoc{
-    background-color: #f8fafc;
     width: 100%;
     height: 100%; 
 }
 
-#ourdoc .ourdoctors .titel{
-    margin-left: 190px;
-    color: black;
-    width: 80%;
-}
+
 #ourdoc .ourdoctors .titel h1{
-    position: relative;
-    float: inline-end;
-    font-size: 50px;
-    max-width: 100%;
+     text-align: center;
+     font-size: 45px;
+     color: black;
 }
-#ourdoc .ourdoctors .titel h1::after{
-    content: ''; 
-    position: absolute; 
-    bottom: -5px; 
-    right: 50px;
-    width: 1200px; 
-    height: 1px; 
-    background-color:#777777; 
-}
+
 #ourdoc .ourdoctors .titel h1 span{
     color: #ffd700;
 }
-#ourdoc .ourdoctors .titel h2 {
-    position: relative;
-    font-size: 60px;
-    top: 65px;
-    left: 50px;
-}
-#ourdoc .ourdoctors .titel h3 {
-    position: relative;
-    font-size: 40px;
-    top: 65px;
-    left: 50px;
-}
+
 #ourdoc .ourdoctors .doc{
     display: flex;
     justify-content: space-around;
     padding: 90px 50px;
-    width: 80%;
-    margin-left: 190px;
-    /* margin-left: 700px; */
+    
+}
+#ourdoc .ourdoctors .doc .dr{
+    border: solid 1px silver;
+    border-radius: 5px;
+    
 }
 
 #ourdoc .ourdoctors .doc .dr img {
@@ -510,7 +384,8 @@ button a{
     color: #777777;
 }
 #ourdoc .ourdoctors .doc .dr button{
-    margin-top: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-color:transparent; 
     color:#007bff; 
     border: 1px solid #007bff; 
@@ -525,57 +400,6 @@ button a{
 }
 
 
-/* client section */
-
-.client{
-    display: flex;
-    justify-content: space-evenly;
-    height: 500px;
-    background-color: #516eff;
-}
-.client .imgclient{
-    width: 18%;
-    height: 70%;
-    margin-top: 59px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    text-align: center;
-}
-.client .imgclient img{
-    position: relative;
-    top: 30px;
-}
-.client .imgclient h3{
-    position: relative;
-    top: 39px;
-}
-.client .clientsays{
-   position: relative;
-   right: 200px;
-   font-size: 20px;
-   color: #f0f0f0;
-}
-.client .clientsays h4{
-    position: relative;
-    top: 125px;
-    font-size: 35px;
-}
-.client .clientsays p{
-    position: relative;
-    top: 165px;
-    margin-top: 10px;
-    color: #ccc;
-}
-.client .clientsays .point{
-    position: relative;
-    font-size: 70px;
-    color: #ccc;
-    border-radius: 500px;
-    top: 200px;
-    left: 250px;
-}
-
-
 /* appointment section */
 
 
@@ -583,55 +407,30 @@ button a{
     color: black;
 }
 #appoinment .titel  h1{
-    position: relative;
-    margin: 25px;
-    left: 190px;
-}
-#appoinment .titel  h1 span{
-    color: #ffd700;
-}
-#appoinment .titel  h1::after{
-    content: ''; 
-    position: absolute; 
-    bottom: -5px; 
-    right: 550px;
-    width: 1200px; 
-    height: 1px; 
-    background-color:#777777; 
-}
-#appoinment .titel h2 {
-    position: relative;
-    text-align: end;
-    bottom: 90px;
-    right: 250px;
-}
-#appoinment .titel h3{
-    position: relative;
-    text-align: end;
-    bottom: 100px;
-    right: 250px;
-    font-size: 32px;
+   text-align: center;
+   font-size: 45px;
 }
 
 #appoinment .appoinment{
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
 }
-#appoinment .appoinment .right{
-    /* margin-left: 150px; */
+#appoinment .appoinment .right img{
+    width: 405px;
+    border-radius: 10px;
 }
 #appoinment .appoinment .left form{
     display: flex;
     flex-direction: column;
-    margin-left: 95px;
 }
 
 .form-group{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    
 }
 .left label {
      margin-bottom: 10px;
@@ -679,8 +478,8 @@ button a{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 60px;
+    margin-top: 5%;
+    margin-bottom: 6%;
     color: #f8fafc;
     font-size: 25px;
 }
@@ -693,7 +492,6 @@ button a{
 #subscrib .subscribe .btnn input{
     background-color: #6393a8;
     color:#f8fafc ;
-    margin-right: 20px;
     padding: 10px;
     border-radius: 8px;
 }
@@ -708,13 +506,11 @@ button a{
 /* How to find us */
 
 #dentics{
-    height: 50vh;
     background-color: #516eff;
 }
 #dentics .container {
     display: flex;
     justify-content: space-around;
-     height: 45vh; 
     color: #f0f0f0;
 }
 #dentics .container .logo2 {
@@ -785,5 +581,303 @@ footer{
     display: flex;
     justify-content: center;
     
+}
+
+/* sign up */
+main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main .form{
+    width: 25%;
+    margin-top: 6%;
+    margin-left: 10%;
+}
+main .form h1{
+    font-size: 42px;
+    margin: 20px 0px;
+}
+main .form h1 span{
+    color: #ffd700;
+}
+main .form form{
+    display: grid;
+    gap: 5px;
+}
+main .form form input{
+    height: 45px;
+    border-color:#007bff ;
+    border-radius: 5px;
+    margin-bottom: 19px;
+}
+main .form form label{
+    margin-left: 10px;
+}
+main .form h4{
+    text-align: end;
+    margin-top: 15px;
+}
+main .form h4 a{
+    text-decoration: none;
+    color: #007bff;
+}
+main .image{
+    width: 39%;
+    margin-top: 6%;
+}
+main .image img{
+    width: 100%;
+}
+.toggle_menu {
+    display: none;
+}
+
+
+/* Responsive */
+@media (max-width:964px) {
+    header .menu {
+        display: none;
+    }
+    .toggle_menu {
+        display: flex;
+        height: 50px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+    } 
+     .toggle_menu::before {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: #516eff;
+        border-radius: 6px;
+        box-shadow: 0 10px 0 #516eff;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    } 
+     .toggle_menu.active::before {
+        transform: translate(0)  rotate(135deg);
+        box-shadow: 0 0 0 #516eff;
+    } 
+    .toggle_menu::after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: #516eff;
+        border-radius: 6px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    .toggle_menu.active::after {
+        transform: translate(0)  rotate(-135deg);
+        
+    } 
+    header .menu.responsive {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgb(0,0,0,0.1);
+        flex-direction: column;
+    }
+    header .menu.responsive li {
+        margin: 15px 0;
+    }
+    header {
+        padding: 0 20px;
+    }
+    #home {
+        flex-direction: column;
+        padding: 12px;
+        height: fit-content;
+    }
+    #home .left , #home .right {
+        width: 100%;
+        padding: 0;
+       
+    }
+    #home .left {
+        margin: 100px 0;
+    }
+    #home .left h1 {
+        font-size: 35px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+   
+    #home .left p {
+        text-align: center;
+        font-size: 15px;
+    }
+    #home .left button{
+        width: 400px;
+        text-align: center;
+    }
+    #home .right img{
+        width: 420px;
+    }
+    #services{
+        flex-direction: column;
+        padding: 12px;
+        height: fit-content;
+    }
+    #services .ourservice{
+        flex-direction: column;
+    }
+    #services .ourservice .titel{
+        text-align: center;
+        margin-left: 30px;
+    }
+    #services .ourservice .titel h2{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    #services .ourservice .titel p{
+        font-size: 20px;
+    }
+    #services .ourservice.steps{
+        justify-content: center;
+        align-items: center;
+    }
+    #serviceprovide{
+        flex-direction: column;
+        padding: 12px;
+        height: fit-content;
+    }
+    #serviceprovide .provide{
+        flex-direction: column;
+    }
+    #serviceprovide .provide .provideimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #serviceprovide .provide .providecheck{
+        flex-direction: column;
+    }
+    #serviceprovide .provide .providecheck h3{
+        display: contents;
+    }
+    #serviceprovide .provide .providecheck .providecheckleft {
+        margin-top: 20px;
+    }
+    
+
+    #special h1{
+        font-size: 35px;
+        align-items: center;
+    }
+    #sectionus {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+      
+      .usmorespecial {
+        flex: 1 1 30%;
+        box-sizing: border-box;
+        margin: 10px;
+    }
+    #aboutus .title h1{
+        font-size: 35px;
+    }
+    
+    .ourhistory{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ourhistory .left{
+        display: flex;
+        justify-content: center;
+    }
+    .ourhistory .right{
+        margin: 5%;
+    }
+    #ourdoc .ourdoctors .titel h1{
+        font-size: 32px;
+        align-items: center;
+        margin-left: 19%;
+    }
+     
+      #ourdoc .ourdoctors .doc{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+      }
+      #ourdoc .ourdoctors .doc .dr{
+        margin-bottom: 5%;
+      }
+
+      .appoinment {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .appoinment .right {
+        order: -1;
+        margin-bottom: 10%;
+      }
+      .appoinment .left{
+        margin-bottom: 10%;
+      }
+      .appoinment .left .form-group{
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+       
+      }
+      .subscribe .tittel h2{
+        font-size: 25px;
+      }
+      .subscribe .btnn form{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+      }
+      #dentics{
+
+      }
+      #dentics .container{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5%;
+      }
+      #dentics .container hr{
+        /* transform: rotate(90deg); */
+        display: none;
+      }
+      #dentics .container.logo2{
+        border-bottom: 10px solid silver;
+      }
+      .name {
+        flex: 1 1 100%;
+      }
+      main .form {
+        width: 100%;
+        justify-content: center;
+        margin-left: 19%;
+        align-items: center;
+      }
+      main .form h1{
+        margin-left: 25%;
+      }
+      main .image img{
+        display: none;
+      }
 }
 
