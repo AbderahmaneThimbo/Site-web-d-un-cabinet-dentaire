@@ -396,9 +396,12 @@ hr{
 
 /* appointment section */
 
-
+#appoinment{
+    margin-bottom: 18px;
+}
 #appoinment .titel{
     color: black;
+   
 }
 #appoinment .titel  h1{
    text-align: center;
@@ -436,15 +439,17 @@ hr{
     width: 100%;
     background: transparent;
     padding: 14px;
-    padding-left: 50px;
+    padding-left: 20px;
     margin-left: 5px;
     border-radius: 5px;
+    border:1px solid silver;
 }
 
 #appoinment .appoinment .left form textarea{
     margin-top: 15px;
     border-radius: 9px;
     padding: 15px 20px;
+    border:1px solid silver;
 }
 #appoinment .appoinment .left form button{
     margin-top: 55px;
